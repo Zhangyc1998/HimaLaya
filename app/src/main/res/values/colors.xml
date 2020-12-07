@@ -4,4 +4,52 @@
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
     <color name="mainColor">#FA7254</color>
+    <color name="gray">#ff848484</color>
+    <color name="main_color">#50b3a7</color>
+    <color name="black">#000000</color>
+    <color name="blue_color_picker">#0066FF</color>
+    <color name="brown_color_picker">#AF593E</color>
+    <color name="green_color_picker">#01A368</color>
+    <color name="green_color_station">#00796A</color>
+    <color name="system_no_meter_bg">#D6EdEB</color>
+    <color name="orange_color_picker">#FF861F</color>
+    <color name="red_color_picker">#ED0A3F</color>
+    <color name="red_orange_color_picker">#FF3F34</color>
+    <color name="sky_blue_color_picker">#76D7EA</color>
+    <color name="station_bg">#86D2CB</color>
+    <color name="violet_color_picker">#8359A3</color>
+    <color name="yellow_color_picker">#FBE870</color>
+    <color name="yellow_green_color_picker">#C5E17A</color>
+    <color name="c333333">#333333</color>
+    <color name="c32d6af">#32d6af</color>
+
+    <color name="cffffff">#ffffff</color>
+    <color name="cccffffff">#ccffffff</color>
+    <color name="ripple_dark">#11000000</color>
+    <color name="ripple_light">#11ffffff</color>
+    <color name="system_no_meter_txt">#000000</color>
+    <color name="line">#f5f5f5</color>
+
+    <color name="myWork_font_checked">#070707</color>
+    <color name="myWork_font_Unchecked">#4D4D4D</color>
+    <color name="light_gray">#D3D3D3</color>
+    <color name="personHead_bg">#50b3a7</color>
+
+
+    <!-- lowVoltage -->
+    <color name="rb_selection_bg">#b2ddd8</color>
+    <color name="rb_unchecked_bg">#36a99b</color>
+    <color name="display_unchecked">#00796a</color>
+    <color name="cf2f5f4">#F2F5F4</color>
+    <color name="cffffffff">#FFFFFFFF</color>
+
+    <color name="c12aba0">#12aba0</color>
+    <color name="red_pressed">#FF6666</color>
+    <color name="red_normal">#FF0000</color>
+
+    <color name="cfafafa">#FAFAFA</color>
+    <color name="cd6edeb">#D6EDEB</color>
+    <color name="F3F1F1">#F3F1F1</color>
+    <color name="EDEDED">#EDEDED</color>
+    <color name="CEE8E6">#CEE8E6</color>
 </resources>

@@ -1,5 +1,7 @@
 package com.example.ximalaya;
 
+import java.util.concurrent.ThreadPoolExecutor;
+
 import net.lucode.hackware.magicindicator.MagicIndicator;
 import net.lucode.hackware.magicindicator.ViewPagerHelper;
 import net.lucode.hackware.magicindicator.buildins.commonnavigator.CommonNavigator;
@@ -21,21 +23,6 @@ public class MainActivity extends AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-//        Map<String, String> map = new HashMap<String, String>();
-//        CommonRequest.getCategories(map, new IDataCallBack<CategoryList>() {
-//            @Override
-//            public void onSuccess(CategoryList categoryList) {
-//                if (categoryList.getCategories() != null) {
-//                    Log.d("zyc", "onSuccess: "+categoryList.getCategories().size());
-//                }
-//            }
-//
-//            @Override
-//            public void onError(int i, String s) {
-//                Log.d("zyc", "onError: "+s);
-//            }
-//        });
         initView();
     }
 
