@@ -14,13 +14,13 @@ public abstract class BaseFragment extends Fragment {
 
     public View rootView;
 
-    public abstract int getLayoutId();
+    public abstract View getLayoutId(LayoutInflater inflater,ViewGroup container, Bundle savedInstanceState);
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        rootView = inflater.inflate(getLayoutId(),container,false);
+        rootView = getLayoutId(inflater,container,savedInstanceState);
         return rootView;
     }
 
