@@ -1,19 +1,14 @@
 package com.example.ximalaya;
-
-import java.util.concurrent.ThreadPoolExecutor;
-
 import net.lucode.hackware.magicindicator.MagicIndicator;
 import net.lucode.hackware.magicindicator.ViewPagerHelper;
 import net.lucode.hackware.magicindicator.buildins.commonnavigator.CommonNavigator;
 import com.example.adapters.IndicatorAdapter;
 import com.example.adapters.PagerAdapter;
-import android.view.View;
-import android.widget.Toast;
-import androidx.appcompat.app.AppCompatActivity;
+import com.example.base.BaseActivity;
 import android.os.Bundle;
 import androidx.viewpager.widget.ViewPager;
 
-public class MainActivity extends AppCompatActivity{
+public class MainActivity extends BaseActivity {
 
     private MagicIndicator indicator;
     private ViewPager contentPager;
@@ -22,8 +17,12 @@ public class MainActivity extends AppCompatActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
         initView();
+    }
+
+    @Override
+    protected int getLayoutId() {
+        return R.layout.activity_main;
     }
 
     private void initView() {

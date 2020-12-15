@@ -5,6 +5,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import com.chad.library.adapter.base.BaseQuickAdapter;
+import com.chad.library.adapter.base.listener.OnItemClickListener;
+import com.example.activity.RecommendActivity;
 import com.example.adapters.RecommendAdapter;
 import com.example.base.BaseFragment;
 import com.example.interfaces.IRecommendCallBack;
@@ -25,6 +28,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -130,6 +134,13 @@ public class RecommendFragment extends BaseFragment
         rvRecommend.setLayoutManager(new LinearLayoutManager(getContext()));
         recommendAdapter = new RecommendAdapter(R.layout.item_recommend, new ArrayList<>());
         rvRecommend.setAdapter(recommendAdapter);
+        recommendAdapter.setOnItemClickListener(new OnItemClickListener() {
+            @Override
+            public void onItemClick(@NonNull BaseQuickAdapter<?, ?> adapter, @NonNull View view, int position) {
+                RecommendActivity.start(getContext(),"123");
+            }
+        });
+
         return rootView;
     }
 }

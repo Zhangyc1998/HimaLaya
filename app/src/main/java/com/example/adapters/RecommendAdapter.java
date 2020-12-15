@@ -26,6 +26,5 @@ public class RecommendAdapter extends BaseQuickAdapter<Album, BaseViewHolder> {
         baseViewHolder.setText(R.id.tvContent,album.getAlbumIntro());
         baseViewHolder.setText(R.id.tvPlay,String.valueOf(album.getPlayCount()));
         baseViewHolder.setText(R.id.tvSound,String.valueOf(album.getIncludeTrackCount()));
-
     }
 }
