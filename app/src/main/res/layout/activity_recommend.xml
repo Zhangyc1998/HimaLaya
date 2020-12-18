@@ -1,11 +1,135 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/EBE8E8">
 
-    <TextView
-        android:layout_centerInParent="true"
+    <ImageView
+        android:id="@+id/ivBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="123223" />
+        android:src="@mipmap/content_empty" />
+
+    <ImageView
+        android:id="@+id/ivCover"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="fitXY" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/ivCover"
+        android:background="@color/cffffffff" />
+
+
+    <com.example.view.RoundRectImageView
+        android:id="@+id/ivAlbum"
+        android:layout_width="68dp"
+        android:layout_height="65dp"
+        android:layout_alignBottom="@+id/ivCover"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="-30dp"
+        android:scaleType="fitXY" />
+
+    <LinearLayout
+        android:id="@+id/llTitle"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_alignBottom="@+id/ivCover"
+        android:layout_marginBottom="-35dp"
+        android:layout_toEndOf="@id/ivAlbum"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textColor="@color/cffffff"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvAuthor"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/gray"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/ivSubscription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivCover"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:background="@drawable/shape_subscription"
+        android:paddingStart="10dp"
+        android:paddingTop="4dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="5dp"
+        android:text="@string/tv_subscription"
+        android:textColor="@color/cffffffff" />
+
+    <RelativeLayout
+        android:id="@+id/rvPlay"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/view"
+        android:background="@color/EBE8E8">
+
+        <ImageView
+            android:id="@+id/ivPlay"
+            android:layout_width="19dp"
+            android:layout_height="19dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:src="@mipmap/play_icon" />
+
+        <TextView
+            android:id="@+id/tvContinue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/ivPlay"
+            android:text="继续播放"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="60dp"
+            android:text="选集" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="5dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/arrow_icon" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/listContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rvPlay" />
+
 </RelativeLayout>

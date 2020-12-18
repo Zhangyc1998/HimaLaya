@@ -50,6 +50,8 @@ dependencies {
     annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
     implementation 'androidx.cardview:cardview:1.0.0'
     implementation "com.scwang.smartrefresh:SmartRefreshLayout:1.1.2"
+    //高斯模糊
+    implementation 'jp.wasabeef:glide-transformations:2.0.1'
 
 
 

@@ -1,9 +1,12 @@
 <resources>
     <string name="app_name">XiMaLaYa</string>
+    <string name="tv_subscription">+ 订阅</string>
+
     <!-- title   -->
     <string-array name="indicator_name">
         <item>"推荐" </item>
         <item>"订阅" </item>
         <item>"历史" </item>
     </string-array>
+
 </resources>
